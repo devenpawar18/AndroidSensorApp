@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SensorApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Splash Screen Activity -->
+    <string name="cmpe_277">CMPE 277 SEC-01</string>
+    <string name="assignment_5">Assignment 5</string>
+    <string name="title">Android Sensor App</string>
+
+    <!-- Sensor App Activity -->
+    <string name="sensor_app">Sensor App</string>
+    <string name="no_of_steps">Number of Steps:</string>
+    <string name="enable_sensor">Enable Sensors</string>
+    <string name="sensor_app_message">The purpose of this app is to work with Android Sensors (motion and Camera) and enable Camera sensors after "n" number of steps</string>
+    <string name="close">Close</string>
+    <string name="disable_sensor">Disable Sensors</string>
+    <string name="feature_not_supported_title">Feature not supported</string>
+    <string name="feature_not_supported_message">The Count Sensor is not available on your phone. Please use Android 4.4 KitKat device to use this feature!</string>
+
+</resources>

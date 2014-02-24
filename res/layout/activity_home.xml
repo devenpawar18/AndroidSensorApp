@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".HomeActivity" >
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="@string/sensor_app_message"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/steps_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="40dip"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/step_counter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/no_of_steps"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/step_counter_edit_text"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:layout_toRightOf="@+id/step_counter_title"
+            android:background="@color/white"
+            android:editable="false"
+            android:gravity="center"
+            android:hint="0"
+            android:padding="5dip"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/steps_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="60dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_sensor"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:background="@color/yellow"
+            android:text="@string/enable_sensor"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:layout_toRightOf="@+id/btn_sensor"
+            android:background="@color/yellow"
+            android:text="@string/close"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/PREVIEW"
+        android:layout_width="1dip"
+        android:layout_height="1dip" />
+
+</RelativeLayout>
